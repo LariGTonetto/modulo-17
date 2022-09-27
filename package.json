@@ -1,6 +1,9 @@
 {
   "dependencies": {
-    "@wdio/cli": "^7.25.0"
+    "@wdio/allure-reporter": "^7.25.0",
+    "@wdio/cli": "^7.25.0",
+    "allure-commandline": "^2.18.1",
+    "wdio-video-reporter": "^3.2.3"
   },
   "devDependencies": {
     "@wdio/appium-service": "^7.25.0",
