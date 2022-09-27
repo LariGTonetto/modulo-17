@@ -1,7 +1,7 @@
-const {join} = require('path')
+//const {join} = require('path')
 
 exports.config = {
-    hostname: 'http://localhost',
+    hostname: 'localhost',
     port: 4723,
     path: '/wd/hub', 
     specs: [
@@ -9,11 +9,14 @@ exports.config = {
     ],
     framework: 'mocha',
     capabilities: [{
+       // "app": join(process.cwd(), '.app/android/woocoom.apk'),
         "platformName": "Android",
-        "platformVersion": "9.0",
-        "deviceName": "ebac-qe",
-        "automationName": "UiAutomator2",
-        "app": join(process.cwd(), '.app/android/woocoom.apk'),
-        "appWaitActivity": "com.woocommerce.android.ui.login.LoginActivity",
+        "appium:platformVersion": "9.0",
+        "appium:deviceName": "ebac-qe",
+        "appium:automationName": "UiAutomator2",
+        "appium:app": "C:\\Users\\LarissaTonetto\\Repositorio\\testes-mobile-android-2\\app\\android\\woocoom.apk",
+        "appium:appWaitActivity": "com.woocommerce.android.ui.login.LoginActivity"
       }]
     }
+
+    
