@@ -1,7 +1,7 @@
-describe('Acess Admin Panel', () => {
+describe('Access Admin Panel', () => {
     it('Sould login with valid credentials', async () => {
-        setTimeou (() => {
+        setTimeout (() => {
             console.log('abriu')
-        }, 10000)
+        }, 500000)
     });  
 })
