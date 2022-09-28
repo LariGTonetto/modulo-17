@@ -12,6 +12,12 @@ pipeline {
                powershell 'npm install'
             }
         }
+         stage('Credenciais do browserstack') {
+            steps {
+               browserstack('5eae75cbc24acdd2090ee66036d65794b289204f') {
+                 }
+            }
+        }
         stage('Executar Testes') {
             steps {
               powershell 'npm test' 
