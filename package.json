@@ -1,8 +1,10 @@
 {
   "dependencies": {
     "@wdio/allure-reporter": "^7.25.0",
+    "@wdio/browserstack-service": "^7.25.0",
     "@wdio/cli": "^7.25.0",
     "allure-commandline": "^2.18.1",
+    "appium": "^1.22.3",
     "wdio-video-reporter": "^3.2.3"
   },
   "devDependencies": {
